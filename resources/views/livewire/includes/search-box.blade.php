@@ -7,5 +7,5 @@
         </svg>
         <input wire:model.live.debounce.500ms='search' type="text" placeholder="Search..." class="bg-gray-100 ml-2 rounded px-4 py-2 hover:bg-gray-100" />
     </div>
-    <span class="text-red-500 text-xs block mt-2">Error</span>
+    <span class="text-red-500 text-xs block mt-2">{{$emptyMessage}}</span>
 </div>

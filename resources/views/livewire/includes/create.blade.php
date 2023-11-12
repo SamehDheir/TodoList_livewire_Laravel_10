@@ -1,4 +1,14 @@
 <div class="container content py-6 mx-auto">
+
+    @error(session('error'))
+        <div role="alert">
+            <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2"> Error </div>
+            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                <p>{{ $message }}</p>
+            </div>
+        </div>
+    @enderror
+
     <div class="mx-auto">
         <div id="create-form" class="hover:shadow p-6 bg-white border-blue-500 border-t-2">
             <div class="flex ">
